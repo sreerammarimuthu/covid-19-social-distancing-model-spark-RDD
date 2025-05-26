@@ -1,4 +1,4 @@
-# COVID-19 Social-Distancing Model using Spark RDD
+# COVID-19 Social-Distancing Model with Spark RDD
 
 This project simulates scalable COVID-19 proximity analysis using PySpark RDDs. It models a real-world concert scenario where people are seated outdoors and identifies infection risk zones through spatial distance checks across three queries. Here, we work with 3 synthetic datasets representing people and their infection status. Using Spark RDDs, we perform efficient distance joins to detect close contacts and analyze the risk of exposure in large spatial datasets.
 
