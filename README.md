@@ -4,17 +4,20 @@ This project simulates scalable COVID-19 proximity analysis using PySpark RDDs. 
 
 ## Contents  
 
-- `data/`: Subsets of synthetic datasets used in the analysis are added here, these were created to simulate real-world social spacing and infection scenarios.  
-`subset_people.csv` - All individuals at the event (randomly generated people with id, x, y, name and age)  
-`subset_infected.csv` - Subset of infected individuals (same format as above, subset of subset_people.csv)  
-`subset_some_infected.csv` - Same as people data, but includes a new column INFECTED with values "yes" or "no" for each person  
+`data/`   
+This folder contains the subsets of synthetic datasets used in the analysis are added here, these were created to simulate real-world social spacing and infection scenarios.  
+- `subset_people.csv` - All individuals at the event (randomly generated people with id, x, y, name and age)
+- `subset_infected.csv` - Subset of infected individuals (same format as above, subset of subset_people.csv)
+- `subset_some_infected.csv` - Same as people data, but includes a new column INFECTED with values "yes" or "no" for each person  
 
-- `output/`: Text outputs of all three queries — generated from running the RDD-based logic in Spark.  
-`Query-1.txt` - List of close contact pairs (pi, infect-i)  
-`Query-2.txt` - Unique IDs of all people at risk (duplicates removed)  
-`Query-3.txt` - Infected person + count of people within 6 units  
+`output/`  
+Text outputs of all three below queries generated from running the RDD-based logic in Spark. 
+- `Query-1.txt` - List of close contact pairs (pi, infect-i)
+- `Query-2.txt` - Unique IDs of all people at risk (duplicates removed)
+- `Query-3.txt` - Infected person + count of people within 6 units  
 
-- `utils+model/`: `social-distancing-model.ipynb` - End-to-end notebook with dataset generation logic, Spark RDD setup and all 3 proximity queries as below.
+`utils+model/`
+- `social-distancing-model.ipynb` - End-to-end notebook with dataset generation logic, Spark RDD setup and all 3 proximity queries as below.  
 
 ## Queries
 
