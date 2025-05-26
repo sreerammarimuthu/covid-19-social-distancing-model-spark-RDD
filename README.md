@@ -10,9 +10,9 @@ This project simulates scalable COVID-19 proximity analysis using PySpark RDDs. 
 `subset_some_infected.csv` - Same as people data, but includes a new column INFECTED with values "yes" or "no" for each person  
 
 - `output/`: Text outputs of all three queries — generated from running the RDD-based logic in Spark.  
-`Query-1.txt` - List of close contact pairs (pi, infect-i)
-`Query-2.txt` - Unique IDs of all people at risk (duplicates removed)
-`Query-3.txt` - Infected person + count of people within 6 units
+`Query-1.txt` - List of close contact pairs (pi, infect-i)  
+`Query-2.txt` - Unique IDs of all people at risk (duplicates removed)  
+`Query-3.txt` - Infected person + count of people within 6 units  
 
 - `utils+model/`: `social-distancing-model.ipynb` - End-to-end notebook with dataset generation logic, Spark RDD setup and all 3 proximity queries as below.
 
