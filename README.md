@@ -20,6 +20,6 @@ This project simulates scalable COVID-19 proximity analysis using PySpark RDDs. 
 
 | **Query** | **Title**                         | **Task**                                                                 |
 | --------- | --------------------------------- | ------------------------------------------------------------------------ |
-| Query 1   | Close Contact Detection           | For each infected person, find all individuals within 6 units distance.  |
-| Query 2   | Unique At-Risk Individuals        | Return distinct IDs of all people who were close to any infected person. |
-| Query 3   | Infected-to-Contact Count Mapping | For each infected person, count how many others are within 6 units.      |  
+| Q-1   | Close Contact Detection           | For each infected person, find all individuals within 6 units distance.  |
+| Q-2   | Unique At-Risk Individuals        | Return distinct IDs of all people who were close to any infected person. |
+| Q-3   | Infected-to-Contact Count Mapping | For each infected person, count how many others are within 6 units.      |  
